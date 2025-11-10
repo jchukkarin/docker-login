@@ -6,13 +6,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h2>เข้าสู่ระบบ</h2>
-    <form action="/login" method="post">
-      <input type="text" name="username" placeholder="ชื่อผู้ใช้" required />
-      <input type="password" name="password" placeholder="รหัสผ่าน" required />
-      <button type="submit">เข้าสู่ระบบ</button>
-    </form>
+  <div class="container item-center justify-center">
+      <h2>เข้าสู่ระบบ</h2>
+      <form action="/login" method="post">
+        <div class="input-group">
+          <input type="text-black" placeholder="Name" name="username" required />
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" name="password" required />
+        </div>
+        <button type="submit" class="btn-login">เข้าสู่ระบบ</button>
+      </form>
   </div>
 </body>
 </html>
