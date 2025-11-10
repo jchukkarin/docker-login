@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap');
+
 body {
   font-family: "Prompt", sans-serif;
   background: linear-gradient(135deg, #667eea, #764ba2);
@@ -39,4 +41,80 @@ button {
 
 button:hover {
   background: #00b383;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* กล่องหลักของ Dashboard */
+.dashboard-box {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  animation: fadeIn 0.8s ease;
+}
+
+/* แอนิเมชันเข้าแบบนุ่มนวล */
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ข้อความหัวเรื่อง */
+h2 {
+  font-weight: 600;
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  color: #6c63ff;
+}
+
+/* ข้อความรอง */
+.subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* ปุ่มออกจากระบบ */
+.btn-logout {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-logout:hover {
+  background: #e84141;
+  transform: scale(1.05);
+}
+
+/* เพิ่มความรู้สึก interactive */
+.actions {
+  margin-top: 15px;
 }
